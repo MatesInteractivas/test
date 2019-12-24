@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <style>
+    .DescartesSpace2DContainer {
+      border: none;
+    }
+  </style>
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='8bdbcb' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='Angulo_agudo' x='20+0*(314+21)' y='80+0*(252+20)' ancho='314' alto='252' dibujar-si='1' fijo='sí' escala='38' O.x='0' O.y='-18' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_03" value="tipo='R2' id='Angulo_recto' x='20+1*(314+21)' y='80+0*(252+20)' ancho='314' alto='252' dibujar-si='1' fijo='sí' escala='38' O.x='0' O.y='-18' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_04" value="tipo='R2' id='Angulo_obtuso' x='20+2*(314+21)' y='80+0*(252+20)' ancho='314' alto='252' dibujar-si='1' fijo='sí' escala='38' O.x='0' O.y='-18' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_05" value="tipo='R2' id='Angulo_llano' x='20+0*(314+21)' y='80+1*(252+20)' ancho='314' alto='252' dibujar-si='1' fijo='sí' escala='38' O.x='0' O.y='-18' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_06" value="tipo='R2' id='Angulo_concavo' x='20+1*(314+21)' y='80+1*(252+20)' ancho='314' alto='252' dibujar-si='1' fijo='sí' escala='38' O.x='0' O.y='-18' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_07" value="tipo='R2' id='Angulo_completo' x='20+2*(314+21)' y='80+1*(252+20)' ancho='314' alto='252' dibujar-si='1' fijo='sí' escala='38' O.x='0' O.y='-18' despl_imagen='arr-izq' fondo='fff0f8fa' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='bb000000' coord_abs='sí' expresión='(20,20,E1._w-40,40)' relleno='ffffff' ancho='1' border_radius='2' lineDash='solid' info='Fondo título' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='003fad' coord_abs='sí' expresión='[E1._w/2,28]' texto='Clasificación de ángulos por la medida o el tamaño de la apertura entre sus lados' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_03" value="espacio='Angulo_agudo' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[Angulo_agudo._w/2,Angulo_agudo._h-50]' texto='Un ángulo \i{\b{\color{003fad}{agudo}}} mide menos de \serif{\${90º}}' decimales='2' fijo='sí' ancho='314-20' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_04" value="espacio='Angulo_agudo' tipo='arco' fondo='sí' color='95a5a6' coord_abs='no' centro='(0,0)' radio='2' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='ecf0f1' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_05" value="espacio='Angulo_agudo' tipo='arco' fondo='sí' color='000000' coord_abs='no' centro='(0,0)' radio='1.5' inicio='0' fin='45' vectores='no' decimales='2' fijo='sí' relleno='f1c40f' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_06" value="espacio='Angulo_agudo' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(0,0)(2.2,0)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_07" value="espacio='Angulo_agudo' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(0,0)(2.2*cos(45*pi/180),2.2*sen(45*pi/180))' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_08" value="espacio='Angulo_recto' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[Angulo_recto._w/2,Angulo_recto._h-50]' texto='Un ángulo \i{\b{\color{003fad}{recto}}} mide \serif{\${90º}}' decimales='2' fijo='sí' ancho='314-20' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_09" value="espacio='Angulo_recto' tipo='arco' fondo='sí' color='95a5a6' coord_abs='no' centro='(0,0)' radio='2' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='ecf0f1' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_10" value="espacio='Angulo_recto' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='no' expresión='(0,0,1,1)' relleno='f1c40f' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_11" value="espacio='Angulo_recto' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(0,0)(2.2,0)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_12" value="espacio='Angulo_obtuso' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[Angulo_obtuso._w/2,Angulo_obtuso._h-50]' texto='Un ángulo \i{\b{\color{003fad}{obtuso}}} mide más de \serif{\${90º}} pero menos de \serif{\${180º}}' decimales='2' fijo='sí' ancho='314-20' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_13" value="espacio='Angulo_obtuso' tipo='arco' fondo='sí' color='95a5a6' coord_abs='no' centro='(0,0)' radio='2' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='ecf0f1' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_14" value="espacio='Angulo_obtuso' tipo='arco' fondo='sí' color='000000' coord_abs='no' centro='(0,0)' radio='1.5' inicio='0' fin='135' vectores='no' decimales='2' fijo='sí' relleno='f1c40f' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_15" value="espacio='Angulo_obtuso' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(0,0)(2.2,0)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_16" value="espacio='Angulo_obtuso' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(0,0)(2.2*cos(135*pi/180),2.2*sen(135*pi/180))' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_17" value="espacio='Angulo_llano' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[Angulo_llano._w/2,Angulo_llano._h-50]' texto='Un ángulo \i{\b{\color{003fad}{llano}}} mide \serif{\${180º}}' decimales='2' fijo='sí' ancho='314-20' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_18" value="espacio='Angulo_llano' tipo='arco' fondo='sí' color='95a5a6' coord_abs='no' centro='(0,0)' radio='2' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='ecf0f1' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_19" value="espacio='Angulo_llano' tipo='arco' fondo='sí' color='000000' coord_abs='no' centro='(0,0)' radio='1.5' inicio='0' fin='180' vectores='no' decimales='2' fijo='sí' relleno='f1c40f' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_20" value="espacio='Angulo_llano' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(2.2,0)(-2.2,0)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_21" value="espacio='Angulo_concavo' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[Angulo_concavo._w/2,Angulo_concavo._h-50]' texto='Un ángulo \i{\b{\color{003fad}{cóncavo}}} mide más que un ángulo llano' decimales='2' fijo='sí' ancho='314-20' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_22" value="espacio='Angulo_concavo' tipo='arco' fondo='sí' color='95a5a6' coord_abs='no' centro='(0,0)' radio='2' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='ecf0f1' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_23" value="espacio='Angulo_concavo' tipo='arco' fondo='sí' color='000000' coord_abs='no' centro='(0,0)' radio='1.5' inicio='0' fin='225' vectores='no' decimales='2' fijo='sí' relleno='f1c40f' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_24" value="espacio='Angulo_concavo' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(0,0)(2.2,0)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_25" value="espacio='Angulo_concavo' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(0,0)(2.2*cos(225*pi/180),2.2*sen(225*pi/180))' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_26" value="espacio='Angulo_completo' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[Angulo_completo._w/2,Angulo_completo._h-50]' texto='Un ángulo \i{\b{\color{003fad}{completo}}} mide \serif{\${360º}} o cuatro ángulos rectos' decimales='2' fijo='sí' ancho='314-20' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_top_center' ">
+      <param name="G_27" value="espacio='Angulo_completo' tipo='arco' fondo='sí' color='95a5a6' coord_abs='no' centro='(0,0)' radio='2' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='ecf0f1' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_28" value="espacio='Angulo_completo' tipo='arco' fondo='sí' color='000000' coord_abs='no' centro='(0,0)' radio='1.5' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='f1c40f' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_29" value="espacio='Angulo_completo' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(0,0)(2.2,0)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_30" value="espacio='Angulo_recto' tipo='segmento' fondo='sí' color='2980b9' coord_abs='no' expresión='(0,0)(0,2.2)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

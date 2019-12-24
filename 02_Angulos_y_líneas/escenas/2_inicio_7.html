@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='8bdbcb' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='522' y='80' ancho='482' alto='525' dibujar-si='1' fijo='sí' escala='32' O.x='0' O.y='-45' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='g' tipo='gráfico' espacio='E2' color='000000' color-int='f39c12' tamaño='7' expresión='(-radio,0)' constricción='x*x+y*y=radio*radio' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='radio=5' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='angle=atan2(g.y,g.x);radianes=(g.y>=0)?angle:2*pi+angle;grados=radianes*180/pi;gradianes=radianes*200/pi' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='bb000000' coord_abs='sí' expresión='(20,20,E1._w-40,40)' relleno='ffffff' ancho='1' border_radius='2' lineDash='solid' info='Fondo título' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='003fad' coord_abs='sí' expresión='[E1._w/2,28]' texto='Medida de un ángulo' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,80]' texto='Para indicar la medida de un ángulo se antepone la letra “\serif{\${m}}” al símbolo de ángulo \serif{\${∠}}. Entonces, para expresar la medida del \serif{\${∠A}} se escribe la expresión \serif{\${m∠A}}, que se lee como: “\i{la medida del ángulo A}”.\n\nEn la escena de la derecha puedes mover el punto naranja y ver la medida del ángulo \serif{\${m∠A}}.' decimales='2' fijo='sí' ancho='482' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[E2._w/2,E2._h-22]' texto='\serif{\${m∠A = [radianes] rad}}\n\serif{\${m∠A = [grados] º}}\n\serif{\${m∠A = [gradianes] ^g}}' decimales='6' fijo='no' ancho='482-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_center' anchor='a_bottom_center' ">
+      <param name="G_05" value="espacio='E2' tipo='arco' fondo='no' color='ff000000' coord_abs='no' centro='(0,0)' radio='radio/2' inicio='_(radio,0)' fin='_(g.x,g.y)' vectores='sí' decimales='2' fijo='sí' relleno='3498db' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_06" value="espacio='E2' tipo='segmento' fondo='no' color='2980b9' coord_abs='no' expresión='(0,0)(6.25,0)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_07" value="espacio='E2' tipo='segmento' fondo='no' color='2980b9' coord_abs='no' expresión='(0,0)(1.25*g.x,1.25*g.y)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_08" value="espacio='E2' tipo='texto' fondo='no' color='000000' coord_abs='no' expresión='(0,0)' texto='A' decimales='2' fijo='sí' ancho='1' color_borde_texto='ffffff' negrita='no' cursiva='sí' font_family='Serif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

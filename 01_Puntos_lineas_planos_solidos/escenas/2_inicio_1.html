@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='8bdbcb' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='522' y='80' ancho='482' alto='525' dibujar-si='1' fijo='sí' escala='32' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="A_01" value="id='POINTS' matriz='sí' evaluar='una-sola-vez' columnas='30' filas='30' expresión='_NUM_POINTS_=5;;_X_    =0;_Y_    =1;_SIZE_ =2;_COLOR_=3;_LABEL_=4;;POINTS[0,_X_]    =-1;POINTS[0,_Y_]    = 2;POINTS[0,_SIZE_] = 2+rnd*5;POINTS[0,_COLOR_]= &squot;e58e26&squot;;POINTS[0, _LABEL_]= &squot;A&squot;;;POINTS[1,_X_]    = 2;POINTS[1,_Y_]    =-3;POINTS[1,_SIZE_] = 2+rnd*5;POINTS[1,_COLOR_]= &squot;0c2461&squot;;POINTS[1,_LABEL_]= &squot;B&squot;;;POINTS[2,_X_]    =-5;POINTS[2,_Y_]    =-5;POINTS[2,_SIZE_] = 2+rnd*5;POINTS[2,_COLOR_]= &squot;009432&squot;;POINTS[2,_LABEL_]= &squot;C&squot;;;POINTS[3,_X_]    = 6;POINTS[3,_Y_]    = 7;POINTS[3,_SIZE_] = 2+rnd*5;POINTS[3,_COLOR_]= &squot;e67e22&squot;;POINTS[3,_LABEL_]= &squot;D&squot;;;POINTS[4,_X_]    = -6;POINTS[4,_Y_]    = 3;POINTS[4,_SIZE_] = 2+rnd*5;POINTS[4,_COLOR_]= &squot;b71540&squot;;POINTS[4,_LABEL_]= &squot;E&squot;;' tipo='matriz' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='bb000000' coord_abs='sí' expresión='(20,20,E1._w-40,40)' relleno='ffffff' ancho='1' border_radius='2' lineDash='solid' info='Fondo título' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='003fad' coord_abs='sí' expresión='[E1._w/2,28]' texto='Puntos' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,80]' texto='Un \i{\b{\color{003fad}{punto}}} es una posición en el espacio, no posee tamaño, longitud, anchura o grosor.\n\nGeneralmente dibujamos a los puntos como pequeños círculos, pero debemos recordar que un punto geométrico solo se refiere a una posición. Cuando se representan los puntos, por ejemplo, en el plano cartesiano, se suelen utilizar letras mayúsculas para etiquetarlos.\n\nA la derecha podemos observar algunos ejemplos de puntos en el plano: \serif{\${A}}, \serif{\${B}}, \serif{\${C}}, \serif{\${D}} y \serif{\${E}}.\n\nSi imaginamos el universo como un único punto, sin nada más, no sería posible moverse en ninguna dirección, esta noción es a lo que nos referimos cuando decimos que un punto tiene dimensión \b{cero}.' decimales='2' fijo='sí' ancho='482' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='punto' fondo='sí' color='(_Rojo_(POINTS[s,_COLOR_]),_Verde_(POINTS[s,_COLOR_]),_Azul_(POINTS[s,_COLOR_]),00)' coord_abs='no' expresión='(POINTS[s,_X_],POINTS[s,_Y_])' familia='s' s.intervalo='[0,_NUM_POINTS_-1]' s.pasos='_NUM_POINTS_-1' decimales='2' fijo='sí' tamaño='POINTS[s,_SIZE_]' negrita='no' cursiva='sí' font_family='Serif' fuente puntos='18' ">
+      <param name="G_05" value="espacio='E2' tipo='texto' fondo='sí' color='130f40' coord_abs='no' expresión='(POINTS[s,_X_]+0.2,POINTS[s,_Y_]+0.2)' familia='s' s.intervalo='[0,_NUM_POINTS_-1]' s.pasos='_NUM_POINTS_-1' texto='[POINTS[s,_LABEL_]]' decimales='2' fijo='sí' ancho='1' color_borde_texto='ffffff' negrita='no' cursiva='sí' font_family='Serif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

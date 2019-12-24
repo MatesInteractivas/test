@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='8bdbcb' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='522' y='80' ancho='482' alto='525' dibujar-si='1' fijo='sí' escala='32' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='A.x=1;A.y=5;B.x=-1;B.y=-5;C.x=-5;C.y=4;D.x=5;D.y=-4;E.x=0;E.y=0' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='bb000000' coord_abs='sí' expresión='(20,20,E1._w-40,40)' relleno='ffffff' ancho='1' border_radius='2' lineDash='solid' info='Fondo título' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='003fad' coord_abs='sí' expresión='[E1._w/2,28]' texto='Identificando algunos ángulos' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,80]' texto='Todos los ángulos tienen como vértice a \serif{\${E}}. Por lo tanto, escribir \serif{\${∠E}} es ambiguo ya que podría referirse a muchos ángulos diferentes. Por esto es importante usar tres letras para identificar algunos ángulos y así tener claro a qué ángulo nos referimos.\n\nPodemos observar que \serif{\${∠AEC}} y \serif{\${∠AED}} son ángulos adyacentes porque están uno al lado del otro y comparten un lado. También son suplementarios, porque juntos forman un ángulo recto. \serif{\${∠AEC}} y \serif{\${∠DEB}} se llaman ángulos \i{\b{\color{003fad}{verticales}}} u \i{\b{\color{003fad}{opuestos por el vértice}}}. ' decimales='2' fijo='sí' ancho='482' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='ecuación' fondo='no' color='3867d6' coord_abs='no' expresión='(x-A.x)/(B.x-A.x)=(y-A.y)/(B.y-A.y)' ancho='3' visible='no' editable='no' ">
+      <param name="G_05" value="espacio='E2' tipo='ecuación' fondo='no' color='b71540' coord_abs='no' expresión='(x-C.x)/(D.x-C.x)=(y-C.y)/(D.y-C.y)' ancho='3' visible='no' editable='no' ">
+      <param name="G_06" value="espacio='E2' tipo='punto' fondo='no' color='3867d6' coord_abs='no' expresión='(A.x,A.y)' decimales='2' fijo='sí' tamaño='5' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_07" value="espacio='E2' tipo='punto' fondo='no' color='3867d6' coord_abs='no' expresión='(B.x,B.y)' decimales='2' fijo='sí' tamaño='5' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_08" value="espacio='E2' tipo='punto' fondo='no' color='b71540' coord_abs='no' expresión='(C.x,C.y)' decimales='2' fijo='sí' tamaño='5' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_09" value="espacio='E2' tipo='punto' fondo='no' color='b71540' coord_abs='no' expresión='(D.x,D.y)' decimales='2' fijo='sí' tamaño='5' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_10" value="espacio='E2' tipo='punto' fondo='no' color='808080' coord_abs='no' expresión='(E.x,E.y)' decimales='2' fijo='sí' tamaño='5' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_11" value="espacio='E2' tipo='texto' fondo='sí' color='0e2028' coord_abs='no' expresión='(A.x,A.y)' texto='A' decimales='2' fijo='sí' ancho='1' color_borde_texto='e7fef7' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E2' tipo='texto' fondo='sí' color='0e2028' coord_abs='no' expresión='(B.x,B.y)' texto='B' decimales='2' fijo='sí' ancho='1' color_borde_texto='e7fef7' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_13" value="espacio='E2' tipo='texto' fondo='sí' color='0e2028' coord_abs='no' expresión='(C.x-0.4,C.y)' texto='C' decimales='2' fijo='sí' ancho='1' color_borde_texto='e7fef7' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='E2' tipo='texto' fondo='sí' color='0e2028' coord_abs='no' expresión='(D.x-0.4,D.y)' texto='D' decimales='2' fijo='sí' ancho='1' color_borde_texto='e7fef7' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_15" value="espacio='E2' tipo='texto' fondo='sí' color='0e2028' coord_abs='no' expresión='(E.x+0.3,E.y+0.35)' texto='E' decimales='2' fijo='sí' ancho='1' color_borde_texto='e7fef7' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
