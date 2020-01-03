@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='8bdbcb' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='522' y='80' ancho='482' alto='525' dibujar-si='1' fijo='sí' escala='32' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='b8c4c8' red10='889498' ejes='405860' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='bb000000' coord_abs='sí' expresión='(20,20,E1._w-40,40)' relleno='ffffff' ancho='0' border_radius='2' lineDash='solid' info='Fondo título' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='003fad' coord_abs='sí' expresión='[E1._w/2,28]' texto='La suma de los ángulos interiores de un polígono es \serif{\${360º}}' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' info='Título' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,80]' texto='\i{\b{\color{003fad}{Demostración}}}\n\nConsideremos que la suma de todos los ángulos llanos que se encuentran en los vértices del polígono es \serif{\${180º · n}}, donde \serif{\${n}} es el número de lados del polígono.\n\nSi solo queremos la suma de los ángulos exteriores, entonces debemos restar de la suma de los ángulos llanos, la suma de los ángulos interiores, la cual sabemos que es \serif{\${180º · (n-2)}}, entonce tenemos que la suma de los ángulos exteriores es:\n\n\serif{\${180º · n - (180º · (n-2)) = 180º · n - 180º · n + 2 · 180º}}\n                                                    \serif{\${= 2 · 180º}}\n                                                    \serif{\${= \b{360º}}}' decimales='2' fijo='sí' ancho='482' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E2' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='(20,20)' texto='Presentar la demostración.\nMostrar un polígono regular con ángulos exteriores y su suma, habrá un pulsador para aumentar el número de lados del polígono.\n' decimales='2' fijo='sí' ancho='482-40' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='14' align='a_left' anchor='a_top_left' info='NOTA DE IMPLEMENTACIÓN' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

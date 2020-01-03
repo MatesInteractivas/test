@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='8bdbcb' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='Diagonal' x='20+0*(21+314)' y='80' ancho='314' alto='380' dibujar-si='1' fijo='sí' escala='40' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_03" value="tipo='R2' id='Convexo' x='20+1*(21+314)' y='80' ancho='314' alto='380' dibujar-si='1' fijo='sí' escala='40' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_04" value="tipo='R2' id='Concavo' x='20+2*(21+314)' y='80' ancho='314' alto='380' dibujar-si='1' fijo='sí' escala='40' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="A_01" value="id='crea_poli_1()' algoritmo='sí' expresión='0' local='r' inicio='i=0; poli_1.num_v=5;' hacer='poli_1[0,_x]=3;poli_1[0,_y]=0;;poli_1[1,_x]=2;poli_1[1,_y]=3;;poli_1[2,_x]=-1;poli_1[2,_y]=4;;poli_1[3,_x]=-3;poli_1[3,_y]=0;;poli_1[4,_x]=0;poli_1[4,_y]=-4;;;poli_1[poli_1.num_v,_x]=poli_1[0,_x];poli_1[poli_1.num_v,_y]=poli_1[0,_y];' tipo='función' ">
+      <param name="A_02" value="id='crea_poli_2()' algoritmo='sí' expresión='0' local='r' inicio='i=0; poli_2.num_v=6; r=3' hacer='poli_2[i,_x]=r*cos(i*2*pi/poli_2.num_v);poli_2[i,_y]=r*sin(i*2*pi/poli_2.num_v);;i=i+1;;poli_2[i,_x]=poli_2[0,_x];poli_2[i,_y]=poli_2[0,_y];' mientras='i<poli_2.num_v' tipo='función' ">
+      <param name="A_03" value="id='crea_poli_3()' algoritmo='sí' expresión='0' local='r' inicio='i=0; poli_3.num_v=7;' hacer='poli_3[0,_x]=3;poli_3[0,_y]=0;;poli_3[1,_x]=3*cos(60*pi/180);poli_3[1,_y]=4*sin(60*pi/180);;poli_3[2,_x]=3*cos(120*pi/180);poli_3[2,_y]=4*sin(120*pi/180);;poli_3[3,_x]=-3;poli_3[3,_y]=0;;poli_3[4,_x]=4*cos(240*pi/180);poli_3[4,_y]=4*sin(240*pi/180);;poli_3[5,_x]=0;poli_3[5,_y]=0;;poli_3[6,_x]=4*cos(300*pi/180);poli_3[6,_y]=4*sin(300*pi/180);;poli_3[poli_3.num_v,_x]=poli_3[0,_x];poli_3[poli_3.num_v,_y]=poli_3[0,_y];' tipo='función' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='_x=0;_y=1;;crea_poli_1();crea_poli_2();crea_poli_3()' ">
+      <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='bb000000' coord_abs='sí' expresión='(20,20,E1._w-40,40)' relleno='ffffff' ancho='1' border_radius='2' lineDash='solid' info='Fondo título' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='003fad' coord_abs='sí' expresión='[E1._w/2,28]' texto='Polígonos convexos y cóncavos' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' info='Título' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[35, 80+Diagonal._h+20]' texto='Una \i{\b{\color{003fad}{diagonal}}} es un segmento que conecta dos vértices no adyacentes de un polígono (línea punteada).' decimales='2' fijo='sí' ancho='284' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[355+15, 80+Diagonal._h+20]' texto='Si todas las diagonales de un polígono se encuentran contenidas en su interior, entonces tenemos un polígono \i{\b{\color{003fad}{convexo}}}.' decimales='2' fijo='sí' ancho='284' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[690+15, 80+Diagonal._h+20]' texto='A un polígono que no es convexo se le llama \i{\b{\color{003fad}{cóncavo}}}. En este caso, el polígono tiene al menos una diagonal que se encuentra fuera del polígono.' decimales='2' fijo='sí' ancho='284' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='Diagonal' tipo='curva' fondo='sí' color='d35400' coord_abs='no' expresión='(poli_1[t,_x], poli_1[t,_y])' parámetro='t' t.intervalo='[0, poli_1.num_v]' t.pasos='poli_1.num_v' relleno='f1c40f' ancho='2' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_07" value="espacio='Diagonal' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_1[2,_x], poli_1[2,_y]) (poli_1[4,_x], poli_1[4,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_08" value="espacio='Convexo' tipo='curva' fondo='sí' color='d35400' coord_abs='no' expresión='(poli_2[t,_x], poli_2[t,_y])' parámetro='t' t.intervalo='[0, poli_2.num_v]' t.pasos='poli_2.num_v' relleno='f1c40f' ancho='2' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_09" value="espacio='Convexo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_2[0,_x], poli_2[0,_y])(poli_2[2,_x], poli_2[2,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_10" value="espacio='Convexo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_2[0,_x], poli_2[0,_y])(poli_2[3,_x], poli_2[3,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_11" value="espacio='Convexo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_2[0,_x], poli_2[0,_y])(poli_2[4,_x], poli_2[4,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_12" value="espacio='Convexo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_2[1,_x], poli_2[1,_y])(poli_2[3,_x], poli_2[3,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_13" value="espacio='Convexo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_2[1,_x], poli_2[1,_y])(poli_2[4,_x], poli_2[4,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_14" value="espacio='Convexo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_2[1,_x], poli_2[1,_y])(poli_2[5,_x], poli_2[5,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_15" value="espacio='Convexo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_2[2,_x], poli_2[2,_y])(poli_2[4,_x], poli_2[4,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_16" value="espacio='Convexo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_2[2,_x], poli_2[2,_y])(poli_2[5,_x], poli_2[5,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_17" value="espacio='Convexo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_2[3,_x], poli_2[3,_y])(poli_2[5,_x], poli_2[5,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_18" value="espacio='Concavo' tipo='curva' fondo='sí' color='d35400' coord_abs='no' expresión='(poli_3[t,_x], poli_3[t,_y])' parámetro='t' t.intervalo='[0, poli_3.num_v]' t.pasos='poli_3.num_v' relleno='f1c40f' ancho='2' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_19" value="espacio='Concavo' tipo='segmento' fondo='sí' color='2c3e50' coord_abs='no' expresión='(poli_3[4,_x], poli_3[4,_y]) (poli_3[6,_x], poli_3[6,_y])' decimales='2' fijo='sí' tamaño='2' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
