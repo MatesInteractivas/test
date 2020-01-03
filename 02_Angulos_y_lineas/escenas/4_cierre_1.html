@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='8bdbcb' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='(E1._w-420)/2' y='130' ancho='420' alto='420' dibujar-si='1' fijo='sí' escala='60' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_03" value="tipo='R2' id='Retro' x='20' y='540' ancho='984' alto='65' dibujar-si='verificado' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="C_01" value="id='verificar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Verificar' expresión='((E1._w-160)/2,E1._h-55,160,35)' valor='0' color='ffffff' borderColor='no' color-int='538431' flat='sí' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='bien=verificar()' dibujar-si='!verificado' ">
+      <param name="C_02" value="id='otro' interfaz='botón' tipo='numérico' región='interior' espacio='Retro' nombre='Otro ejercicio' expresión='(Retro._w-180,(Retro._h-35)/2,160,35)' valor='0' color='ffffff' borderColor='no' color-int='538431' flat='sí' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='otro_ejercicio()' dibujar-si='(num_ejer<orden_preguntas.long)' ">
+      <param name="C_03" value="id='otras_preguntas' interfaz='botón' tipo='numérico' región='interior' espacio='Retro' nombre='Comenzar de nuevo' expresión='(Retro._w-220,(Retro._h-35)/2,200,35)' valor='0' color='ffffff' borderColor='no' color-int='538431' flat='sí' text_align='a_center_center' image_align='a_center_center' negrita='sí' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='18' acción='calcular' parámetro='verificado=0;empezar_de_nuevo()' dibujar-si='(num_ejer==orden_preguntas.long)' ">
+      <param name="C_04" value="id='c_ang' tipo='gráfico' espacio='E2' color='ecf0f1' color-int='c0392b' tamaño='7' expresión='(0,0)' constricción='x*x+y*y = radio*radio' activo-si='!verificado' ">
+      <param name="A_01" value="id='tipo_angulo' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='&squot;agudo&squot;;&squot;recto&squot;;&squot;obtuso&squot;;&squot;llano&squot;;&squot;cóncavo&squot;;&squot;completo&squot;' tipo='vector' ">
+      <param name="A_02" value="id='orden_preguntas' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='0;1;2;3;4;5' tipo='vector' ">
+      <param name="A_03" value="id='permutar(datos)' algoritmo='sí' expresión='0' local='i; index; tmp' inicio='i=0; l=_Eval_(datos+&squot;.long&squot;)' hacer='index=ent(rnd*l);tmp=_Eval_(datos+&squot;[&squot;+i+&squot;]&squot;);;_Eval_(datos+&squot;[&squot;+i+&squot;]:=&squot; + datos+&squot;[&squot;+index+&squot;]&squot;);_Eval_(datos+&squot;[&squot;+index+&squot;]:=&squot; + tmp);;i=i+1' mientras='i<l' tipo='función' ">
+      <param name="A_04" value="id='empezar_de_nuevo()' algoritmo='sí' expresión='0' hacer='num_ejer=0;;permutar(&squot;orden_preguntas&squot;);;otro_ejercicio()' tipo='función' ">
+      <param name="A_05" value="id='otro_ejercicio()' algoritmo='sí' expresión='0' inicio='verificado=0;' hacer='idx_angulo=orden_preguntas[num_ejer];angulo=tipo_angulo[idx_angulo];;c_ang.x=radio;c_ang.y=radio;;num_ejer=num_ejer+1;' tipo='función' ">
+      <param name="A_06" value="id='verificar()' algoritmo='sí' expresión='bien' inicio='verificado=1' hacer='bien=(idx_angulo==0)?(grados<90):bien;bien=(idx_angulo==1)?(grados==90):bien;bien=(idx_angulo==2)?((grados>90)&&(grados<180)):bien;bien=(idx_angulo==3)?(grados==180):bien;bien=(idx_angulo==4)?((grados>180)&&(grados<360)):bien;bien=(idx_angulo==5)?(grados==360):bien;' tipo='función' ">
+      <param name="A_07" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='pos_res_y=205;sep_res=70;;img_bad=&squot;images/bad.svg&squot;;img_good=&squot;images/good.svg&squot;;;empezar_de_nuevo();;radio=3' ">
+      <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='grados=atan2(c_ang.y,c_ang.x);grados=(grados<0)?2*pi+grados:grados;grados=ent(grados*(180/pi));grados=(grados==0)?360:grados;grados=grados+(grados%2);;c_ang.x=radio*cos(grados*(pi/180));c_ang.y=radio*sen(grados*(pi/180))' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='bb000000' coord_abs='sí' expresión='(20,20,E1._w-40,40)' relleno='e7fef7' ancho='1' border_radius='2' lineDash='solid' info='Fondo título' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='003fad' coord_abs='sí' expresión='[E1._w/2,28]' texto='Repaso' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' info='Título' ">
+      <param name="G_03" value="espacio='E1' tipo='punto' fondo='sí' color='8e44ad' coord_abs='sí' expresión='(40,100)' decimales='2' fijo='sí' tamaño='20' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='(40,100)' texto='[num_ejer]' decimales='0' fijo='no' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='25' align='a_left' anchor='a_center_center' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[80,88]' texto='Mueve el punto rojo para construir un ángulo \b{\i{[angulo]}} y verifica tu respuesta.' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='Retro' tipo='rectángulo' fondo='no' color='ff3498db' dibujar-si='bien' coord_abs='sí' expresión='(0,0,5,65)' relleno='3498db' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_07" value="espacio='Retro' tipo='rectángulo' fondo='no' color='ff3498db' dibujar-si='!bien' coord_abs='sí' expresión='(0,0,5,65)' relleno='c0392b' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_08" value="espacio='Retro' tipo='texto' fondo='no' color='000000' coord_abs='sí' expresión='[60,Retro._h/2]' texto='[(bien)?&squot;¡Muy bien! construiste correctamente el ángulo \b{\i{[angulo]}}.&squot;:&squot;No construiste un ángulo \b{\i{[angulo]}}, quizá necesitas revisar de nuevo las definiciones.&squot;]' decimales='2' fijo='sí' ancho='E1._w-60' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_center_left' ">
+      <param name="G_09" value="espacio='Retro' tipo='imagen' fondo='no' coord_abs='sí' expresión='(35,Retro._h/2,1,1)' archivo='[bien?img_good:img_bad]' rotini='0' opacidad='1' ">
+      <param name="G_10" value="espacio='E2' tipo='arco' fondo='sí' color='95a5a6' coord_abs='no' centro='(0,0)' radio='radio-0.25' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='ecf0f1' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_11" value="espacio='E2' tipo='arco' fondo='no' color='000000' dibujar-si='(grados!=360)&&(grados!=90)' coord_abs='no' centro='(0,0)' radio='2.25' inicio='_(3,0)' fin='_(c_ang.x,c_ang.y)' vectores='sí' decimales='2' fijo='sí' relleno='f1c40f' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_12" value="espacio='E2' tipo='arco' fondo='no' color='000000' dibujar-si='(grados==360)&&(grados!=90)' coord_abs='no' centro='(0,0)' radio='2.25' inicio='0' fin='360' vectores='no' decimales='2' fijo='sí' relleno='f1c40f' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_13" value="espacio='E2' tipo='rectángulo' fondo='no' color='ff20303a' dibujar-si='(grados==90)' coord_abs='no' expresión='(0,0,1.5,1.5)' relleno='f1c40f' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_14" value="espacio='E2' tipo='segmento' fondo='no' color='2980b9' coord_abs='no' expresión='(0,0)(radio,0)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_15" value="espacio='E2' tipo='segmento' fondo='no' color='2980b9' coord_abs='no' expresión='(0,0)(c_ang.x,c_ang.y)' decimales='2' fijo='sí' tamaño='0' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_16" value="espacio='E2' tipo='rectángulo' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(E2._w-80,10,70,30)' relleno='273c75' ancho='1' border_radius='5' lineDash='solid' ">
+      <param name="G_17" value="espacio='E2' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='(E2._w-45,25)' texto='[grados]º' decimales='0' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_center_center' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
