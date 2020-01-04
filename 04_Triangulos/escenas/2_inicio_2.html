@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='8bdbcb' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_02" value="tipo='R2' id='Rectangulo' x='20+0*(21+314)' y='120' ancho='314' alto='385' dibujar-si='1' fijo='sí' escala='32' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_03" value="tipo='R2' id='Agudo' x='20+1*(21+314)' y='120' ancho='314' alto='385' dibujar-si='1' fijo='sí' escala='32' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="E_04" value="tipo='R2' id='Obtuso' x='20+2*(21+314)' y='120' ancho='314' alto='385' dibujar-si='1' fijo='sí' escala='32' O.x='0' O.y='30' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='esc=0.2' hacer='t1_v1.x=-4;t1_v1.y=-3;t1_v2.x=-4;t1_v2.y=3;t1_v3.x=4;t1_v3.y=-3;;//;;t2_v1.x=-3;t2_v1.y=-3.5;t2_v2.x=3;t2_v2.y=-3.5;t2_v3.x=0;t2_v3.y=3.5;;//;;t3_v1.x=-3;t3_v1.y=-3;t3_v2.x=2;t3_v2.y=0;t3_v3.x=3;t3_v3.y=5;' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='bb000000' coord_abs='sí' expresión='(20,20,E1._w-40,40)' relleno='ffffff' ancho='1' border_radius='2' lineDash='solid' info='Fondo título' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='sí' color='003fad' coord_abs='sí' expresión='[E1._w/2,28]' texto='Clasificación de triángulos por sus ángulos' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='21' align='a_left' anchor='a_top_center' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[20,80]' texto='Al clasificar un triángulo por sus ángulos, hay que observar si algunos de los ángulos tienen ciertas características. Por ejemplo:' decimales='2' fijo='sí' ancho='E1._w-40' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[35, 120+ Rectangulo._h+20]' texto='Si hay un ángulo recto (\serif{\b{\${90º}}}), entonces es un \i{\b{\color{003fad}{triángulo rectángulo}}}. ' decimales='2' fijo='sí' ancho='284' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[355+15, 120+ Rectangulo._h+20]' texto='Si las medidas de todos los ángulos son menores que \serif{\b{\${90º}}}, entonces es un \i{\b{\color{003fad}{triángulo agudo}}}.' decimales='2' fijo='sí' ancho='284' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='sí' color='000000' coord_abs='sí' expresión='[690+15, 120+ Rectangulo._h+20]' texto='Si la medida de un ángulo es mayor que \serif{\b{\${90º}}}, entonces es un \i{\b{\color{003fad}{triángulo obtuso}}}.' decimales='2' fijo='sí' ancho='284' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_justify' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='Rectangulo' tipo='polígono' fondo='sí' color='0984e3' coord_abs='no' expresión='(t1_v1.x,t1_v1.y)(t1_v2.x,t1_v2.y)(t1_v3.x,t1_v3.y)(t1_v1.x,t1_v1.y)' relleno='74b9ff' ancho='2' lineDash='solid' ">
+      <param name="G_08" value="espacio='Rectangulo' tipo='rectángulo' fondo='sí' color='ff20303a' coord_abs='no' expresión='(t1_v1.x,t1_v1.y,1,1)' relleno='99000000' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_09" value="espacio='Agudo' tipo='polígono' fondo='sí' color='00b894' coord_abs='no' expresión='(t2_v1.x,t2_v1.y)(t2_v2.x,t2_v2.y)(t2_v3.x,t2_v3.y)(t2_v1.x,t2_v1.y)' relleno='55efc4' ancho='2' lineDash='solid' ">
+      <param name="G_10" value="espacio='Obtuso' tipo='polígono' fondo='sí' color='e17055' coord_abs='no' expresión='(t3_v1.x,t3_v1.y)(t3_v2.x,t3_v2.y)(t3_v3.x,t3_v3.y)(t3_v1.x,t3_v1.y)' relleno='fab1a0' ancho='2' lineDash='solid' ">
+      <param name="G_11" value="espacio='Obtuso' tipo='arco' fondo='no' color='ff20303a' coord_abs='no' centro='(t3_v2.x,t3_v2.y)' radio='1' inicio='(t3_v3.x-t3_v2.x,t3_v3.y-t3_v2.y)' fin='(t3_v1.x-t3_v2.x,t3_v1.y-t3_v2.y)' vectores='sí' decimales='2' fijo='sí' relleno='99000000' ancho='0' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

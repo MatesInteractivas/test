@@ -1,0 +1,14 @@
+@import url('fonts_embed.css');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.DescartesSpace2DContainer, .DescartesSpace3DContainer {
+  border-radius:2px;
+  border:1px solid rgba(0,0,0,0.15);
+}
+
