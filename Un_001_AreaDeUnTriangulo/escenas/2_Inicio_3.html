@@ -7,8 +7,6 @@
   <style>
     #paralelogramo,
     #paralelogramo .DescartesCheckboxLabel {
-      background-color: #c8fdff;
-      color: #000;
       font-size: 18px !important;
     }
   </style>
@@ -29,9 +27,9 @@
       <param name="editable" value="no">
       <param name="Idioma" value="español">
       <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
-      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='45' O.x='0' O.y='80' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
-      <param name="E_02" value="tipo='R2' id='Grafico' x='20' y='180' ancho='984' alto='425' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='a7ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' ">
-      <param name="C_01" value="id='paralelogramo' tipo='checkbox' región='interior' espacio='Grafico' expresión='(180,10,30,30)' valor='1' ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='45' O.x='0' O.y='80' despl_imagen='arr-izq' fondo='2980b9' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' borderColor='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='Grafico' x='20' y='180' ancho='984' alto='425' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='a7ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' borderColor='000000' border_radius='0' ">
+      <param name="C_01" value="id='paralelogramo' tipo='checkbox' región='interior' espacio='Grafico' nombre='Ver paralelogramo' expresión='(10,10,200,30)' valor='1' label_color='ff000000' label_text_color='ffffff' ">
       <param name="C_02" value="id='A' tipo='gráfico' espacio='Grafico' color='222222' color-int='ffffff' tamaño='7' expresión='(4,2)' ">
       <param name="C_03" value="id='B' tipo='gráfico' espacio='Grafico' color='222222' color-int='ffffff' tamaño='7' expresión='(-3,-2)' ">
       <param name="C_04" value="id='C' tipo='gráfico' espacio='Grafico' color='222222' color-int='ffffff' tamaño='7' expresión='(2,-2.5)' ">
@@ -49,7 +47,7 @@
       <param name="G_09" value="espacio='Grafico' tipo='texto' fondo='no' color='000000' coord_abs='no' expresión='((B.x+C.x)/2-1,(B.y+C.y)/2-0.5)' texto='base = b' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
       <param name="G_10" value="espacio='Grafico' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(A.x,A.y)(HA.x,HA.y)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='20' lineDash='solid' ">
       <param name="G_11" value="espacio='Grafico' tipo='texto' fondo='no' color='000000' coord_abs='no' expresión='((A.x+HA.x)/2,(A.y+HA.y)/2)' texto='altura = h' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='sí' font_family='Serif' fuente puntos='20' align='a_left' anchor='a_top_left' ">
-      <param name="G_12" value="espacio='Grafico' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[15,15]' texto='Ver paralelogramo' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='Grafico' tipo='texto' fondo='no' color='ffffff' dibujar-si='0' coord_abs='sí' expresión='[15,15]' texto='Ver paralelogramo' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='19' align='a_left' anchor='a_top_left' ">
     </ajs>
   </div>
 
