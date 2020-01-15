@@ -1,0 +1,11 @@
+<svg width="46" height="46" version="1.1" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="shadow" x="0" width="1" height="1.5" color-interpolation-filters="sRGB">
+   <feFlood flood-opacity=".2"/>
+   <feComposite in2="SourceGraphic" operator="in"/>
+   <feOffset dx="0" dy="2" result="result1"/>
+   <feComposite in="SourceGraphic" in2="result1"/>
+  </filter>
+ </defs>
+ <path d="m29 24h-12c-1.1 0-2-0.9-2-2s0.9-2 2-2h12c1.1 0 2 0.9 2 2s-0.9 2-2 2zm-6-20c-9.9 0-18 8.1-18 18s8.1 18 18 18 18-8.1 18-18-8.1-18-18-18zm0 32c-7.7 0-14-6.3-14-14s6.3-14 14-14 14 6.3 14 14-6.3 14-14 14z" fill="#c0392b" filter="url(#shadow)"/>
+</svg>
