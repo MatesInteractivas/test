@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Ecuaciones de primer grado</title>
+  <link rel="icon" type="image/png" href="logos/favicon.png">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <style>
+    .DescartesAppContainer {
+      background-color: #EBEEFF;
+    }
+  </style>
+  
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#7f8c8d;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="665">
+      <param name="tamaño" value="1024x665">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='40' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='2daae4' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' color_borde_texto='0' borderColor='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='HTMLIFrame' id='MAIN' x='0' y='40' ancho='100%' alto='625' dibujar-si='1' archivo='[escena]' ">
+      <param name="E_03" value="tipo='R2' id='MENU' x='0' y='0' ancho='100%' alto='100%' dibujar-si='show_menu' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='aa000000' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' color_borde_texto='0' borderColor='000000' border_radius='0' ">
+      <param name="C_01" value="id='retroceder' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-95,0,40,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='8' imagen='images/retroceder.svg' acción='calcular' parámetro='idx=(escena_index>0)?escena_index-1:escena_index;bix=get_bix(idx);escena=Escena(idx);' ">
+      <param name="C_02" value="id='avanzar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-45,0,40,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='8' imagen='images/avanzar.svg' acción='calcular' parámetro='idx=(escena_index<escenas.long-1)?escena_index+1:escena_index;bix=get_bix(idx);escena=Escena(idx)' ">
+      <param name="C_03" value="id='menu_expand' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(0,0,40,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/menu_expand.svg' acción='calcular' parámetro='show_menu=1' ">
+      <param name="C_04" value="id='menu_close' interfaz='botón' tipo='numérico' región='interior' espacio='MENU' expresión='(0,0,40,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' imagen='images/menu_close.svg' acción='calcular' parámetro='show_menu=0' ">
+      <param name="C_05" value="id='B_0' interfaz='botón' tipo='numérico' región='interior' espacio='MENU' nombre='              Explora' expresión='(10,50+0*(35+sepbtn),200,35)' valor='1' color='ffffff' borderColor='6681cc' color-int='ff6681cc' flat='no' text_align='a_bottom_left' image_align='a_center_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='20' imagen='images/explora.svg' acción='calcular' parámetro='bix=0;escena=Escena(Mot_index)' ">
+      <param name="C_06" value="id='B_1' interfaz='botón' tipo='numérico' región='interior' espacio='MENU' nombre='              Representa' expresión='(10,50+1*(35+sepbtn),200,35)' valor='1' color='ffffff' borderColor='6681cc' color-int='ff6681cc' flat='no' text_align='a_bottom_left' image_align='a_center_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='20' imagen='images/representa.svg' acción='calcular' parámetro='bix=1;escena=Escena(Ini_index)' ">
+      <param name="C_07" value="id='B_2' interfaz='botón' tipo='numérico' región='interior' espacio='MENU' nombre='              Descubre' expresión='(10,50+2*(35+sepbtn),200,35)' valor='1' color='ffffff' borderColor='6681cc' color-int='ff6681cc' flat='no' text_align='a_bottom_left' image_align='a_center_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='20' imagen='images/descubre.svg' acción='calcular' parámetro='bix=2;escena=Escena(Des_index)' ">
+      <param name="C_08" value="id='B_3' interfaz='botón' tipo='numérico' región='interior' espacio='MENU' nombre='              Resuelve' expresión='(10,50+3*(35+sepbtn),200,35)' valor='0' color='ffffff' borderColor='6681cc' color-int='ff6681cc' flat='no' text_align='a_bottom_left' image_align='a_center_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='20' imagen='images/resuelve.svg' acción='calcular' parámetro='bix=3;escena=Escena(Cie_index)' ">
+      <param name="C_09" value="id='B_4' interfaz='botón' tipo='numérico' región='interior' espacio='MENU' nombre='              Créditos' expresión='(10,50+4*(35+sepbtn),200,35)' valor='0' color='ffffff' borderColor='6681cc' color-int='ff6681cc' flat='no' text_align='a_bottom_left' image_align='a_center_left' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='20' imagen='images/creditos.svg' acción='calcular' parámetro='bix=4;escena=Escena(Inf_index)' ">
+      <param name="A_01" value="id='escenas' vector='sí' evaluar='una-sola-vez' tamaño='5' expresión='_titulo_=&squot;Ecuaciones de primer grado (sumas)&squot; ; ;;Mot_index=0 ;escenas[0]=&squot;escenas/escena_01.html&squot;;;Ini_index=1;escenas[1]=&squot;escenas/escena_02.html&squot;;;Des_index=2;escenas[2]=&squot;escenas/escena_03.html&squot;;;Cie_index=3;escenas[3]=&squot;escenas/escena_04.html&squot;;;Inf_index=4;escenas[4]=&squot;escenas/info.html&squot;;' tipo='vector' ">
+      <param name="A_02" value="id='Escena(i)' algoritmo='sí' expresión='escena' hacer='escena_index=i;escena=escenas[escena_index];_subtitulo_=Subtitulo(bix);;show_menu=0' tipo='función' ">
+      <param name="A_03" value="id='Subtitulo(i)' algoritmo='sí' expresión='subt' inicio='subt=&squot;Guión&squot;' hacer='subt=(i==0)?&squot;Explora&squot;:subt;subt=(i==1)?&squot;Representa&squot;:subt;subt=(i==2)?&squot;Descubre&squot;:subt;subt=(i==3)?&squot;Resuelve&squot;:subt;subt=(i==4)?&squot;Créditos&squot;:subt;' tipo='función' ">
+      <param name="A_04" value="id='get_bix(idx)' algoritmo='sí' expresión='bix' inicio='bix=4' hacer='bix=(idx < Inf_index)?3:bix;bix=(idx < Cie_index)?2:bix;bix=(idx < Des_index)?1:bix;bix=(idx < Ini_index)?0:bix' tipo='función' ">
+      <param name="A_05" value="id='inicio()' algoritmo='sí' expresión='0' hacer='anchb=200;sepbtn=15;escena_index=0;escena=Escena(escena_index);;' tipo='función' ">
+      <param name="A_06" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='inicio()' ">
+      <param name="A_07" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='6681cc' coord_abs='sí' expresión='[52,8]' texto='[_titulo_]  —  [_subtitulo_]' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='24' align='a_left' anchor='a_top_left' info='Título' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='ffffff' coord_abs='sí' expresión='[50,6]' texto='[_titulo_]  —  [_subtitulo_]' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='24' align='a_left' anchor='a_top_left' info='Título' ">
+      <param name="G_03" value="espacio='E1' tipo='segmento' fondo='sí' color='ffffff' coord_abs='sí' expresión='(40,4)(40,E1._h-4)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_04" value="espacio='E1' tipo='segmento' fondo='sí' color='ffffff' coord_abs='sí' expresión='(E1._w-100,4)(E1._w-100,E1._h-4)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_05" value="espacio='MENU' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(0,40,220,625)' relleno='2daae4' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_06" value="espacio='MENU' tipo='rectángulo' fondo='sí' color='20303a' coord_abs='sí' expresión='(0,0,41,40)' relleno='2daae4' ancho='0' border_radius='0' lineDash='solid' ">
+      <param name="G_07" value="espacio='MENU' tipo='segmento' fondo='no' color='ffffff' coord_abs='sí' expresión='(10,88+bix*(35+sepbtn))(210,88+bix*(35+ sepbtn))' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_08" value="espacio='MENU' tipo='segmento' fondo='sí' color='ffffff' coord_abs='sí' expresión='(40,4)(40,E1._h-4)' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="Animación" value="pausa='40' controles='no' auto='no' repetir='no' hacer=';' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

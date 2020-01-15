@@ -1,0 +1,4 @@
+id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='x=100;y=100;w=100;h=100;borde=2;;ADVERTENCIA=&squot;f1c40f&squot;;BIEN=&squot;2ecc71&squot;;MAL=&squot;e74c3c&squot;;COMENTARIO=&squot;3498db&squot;;NULL=&squot;&squot;;;color.w=15;color=NULL;' 
+espacio='E1' tipo='rectángulo' fondo='no' color='f7000000' coord_abs='sí' expresión='(x,y,w,h)' relleno='ffffff' ancho='borde' border_radius='0' lineDash='solid' 
+espacio='E1' tipo='rectángulo' fondo='no' color='ffffffff' dibujar-si='color!=NULL' coord_abs='sí' expresión='(x,y,color.w,h)' relleno='(R(color),G(color),B(color),00)' ancho='0' border_radius='0' lineDash='solid' 
+espacio='E1' tipo='segmento' fondo='no' color='cc000000' coord_abs='sí' expresión='(x+w,y+h)(x,y+h)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' 
