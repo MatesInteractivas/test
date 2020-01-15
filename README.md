@@ -18,3 +18,9 @@ https://matesinteractivas.github.io/test/03_Poligonos/
 https://matesinteractivas.github.io/test/04_Triangulos/
 
 https://matesinteractivas.github.io/test/05_Cuadrilateros/
+
+---
+
+https://matesinteractivas.github.io/test/Ecuaciones_de_primer_grado_solo_sumas/
+
+https://matesinteractivas.github.io/test/Ecuaciones_de_primer_grado_sumas_y_restas/
