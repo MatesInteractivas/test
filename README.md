@@ -10,6 +10,12 @@ https://matesinteractivas.github.io/test/Un_003_IntroduccionALaGeometriaAnalitic
 https://matesinteractivas.github.io/test/Un_004_IntroduccionAlCalculo/index.html
 『[Descargar](https://github.com/MatesInteractivas/test/releases/download/v1.0/Un_004_IntroduccionAlCalculo.zip)』
 
+https://matesinteractivas.github.io/test/Un_007_GraficasDeFunciones/index.html
+『[Descargar](https://github.com/MatesInteractivas/test/releases/download/v1.0/Un_007_GraficasDeFunciones.zip)』
+
+https://matesinteractivas.github.io/test/Un_008_Probabilidad/index.html
+『[Descargar](https://github.com/MatesInteractivas/test/releases/download/v1.0/Un_008_Probabilidad.zip)』
+
 ---
 
 https://matesinteractivas.github.io/test/01_Puntos_lineas_planos_solidos/ 『[Descargar](https://github.com/MatesInteractivas/test/releases/download/v1.0/01_Puntos_lineas_planos_solidos.zip)』
